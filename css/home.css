@@ -112,12 +112,12 @@ body {}
 
 /* Main Body */
 
-#main-body h3 {
+.info-head {
   font-size: 3rem;
   font-family: "Ranchers", serif, sans-serif;
 }
 
-#main-body p {
+.information {
   margin-top: 0.7rem;
   font-size: 1.3rem;
   font-family: "Sourced Sans Pro", sans-serif, serif;
@@ -232,6 +232,10 @@ body {}
 
 /* MEDIA QUERIES */
 @media (max-width: 1028px) {
+  h1 {
+    font-size: 7.5rem;
+    padding: 1.5rem 1rem;
+  }
   .info-right .info-text-container {
     background-color: #c9ffcc;
   }
@@ -297,20 +301,35 @@ body {}
   .info-text {
     text-align: center;
   }
-  .info-text h3, .info-text p{
+  .information, .info-head{
     text-align: center;
     display: inline-block;
     width: 90%;
     align-items: center; align-content: center; align-self: center;
   }
-  .info-text h3 {
-    font-size: 15rem;
+  .info-head {
+    font-size: 5rem;
+  }
+  .information {
+    font-size: 3rem;
   }
   .info-btn {
     color: #fff;
     background-color: #00bbf0;
     border-color: #00bbf0;
     text-decoration: none;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .info-icon {
+    font-size: 100px;
+    color: #00bbf0;
+    display: inline-block;
+    margin: 2.7rem auto;
+    background-color: #a6e3e999;
+    border-radius: 25%;
+    width: 180px; height: 180px;
+    padding: 40px;
   }
 
   .info-right .info-icon,
