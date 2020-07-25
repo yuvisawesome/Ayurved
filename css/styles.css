@@ -1,0 +1,26 @@
+/* COLORS */
+.c-text{color: #222831;}
+.bg-body{background-color: #f9f7f7;}
+
+
+/* FONTS */
+.f-1{font-size: 1rem;} .f-2{font-size: 2rem;} .f-3{font-size: 3rem;} .f-4{font-size: 4rem;} .f-5{font-size: 5rem;}
+
+/* Display */
+.inline-block{display: inline-block;} .block{display: block;} .inline{display: inline;}
+
+
+/* OTHER CLASSES */
+.center{text-align: center;}
+
+
+
+
+
+/* DEFAULT SETTINGS */
+footer {
+  background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px
+}

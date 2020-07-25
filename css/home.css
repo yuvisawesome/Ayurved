@@ -1,0 +1,347 @@
+body {}
+.body{background-color: #e8fffa;}
+/* NAVBAR */
+
+#navbar {
+  border-style: none;
+  border-bottom-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: 0.5px;
+  padding-left: 13rem;
+  padding-right: 13rem;
+  /*ONLY FOR BIG SCREENS*/
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  font-family: 'Rowdies', cursive;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.nav-link {
+  color: #ddffff;
+  font-family: 'Red Rose', cursive;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #ddffffaa;
+}
+
+#more-btn {
+  color: #ddffff;
+}
+
+#more-btn:hover {
+  color: #ddffffaa;
+}
+
+#more-btn:active {
+  outline-style: none;
+}
+
+
+/* Heading */
+
+#heading {
+  height: 100vh;
+  width: auto;
+  padding: 0;
+  z-index: 4;
+  margin-bottom: 5rem;
+  background-color: #e8fffa;
+}
+
+.heading {
+  color: #ddffff;
+  text-shadow: 2px 2px 2px #000;
+  text-transform: uppercase;
+  height: 60vh;
+  padding: 5rem;
+  padding-top: 6rem;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#navigation {
+  margin-top: 10vh;
+  height: 20vh;
+  align-items: center;
+}
+
+#navigation ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 15rem;
+  /*This is only for large screens*/
+  margin-top: auto;
+}
+
+#navigation li {
+  display: inline-block;
+}
+
+#navigation a {
+  background-color: #f0f9ffaa;
+  font-size: 1.7rem;
+  padding: 1rem 0.8rem;
+  border-radius: 15% / 50%;
+  border: 1px #fee2b3 solid;
+  color: #ff847c;
+  font-family: 'Fredoka One', cursive;
+}
+
+#navigation a:hover {
+  text-decoration: none;
+  color: #ea907acc;
+  background-color: #fafaf6ccx;
+}
+
+.top {
+  background: no-repeat url("../images/ayurved-image.png");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  z-index: -1
+  height: 100vh;
+}
+.top-small{display: none; height: 0;}
+
+/* Main Body */
+
+#main-body h3 {
+  font-size: 3rem;
+  font-family: "Ranchers", serif, sans-serif;
+}
+
+#main-body p {
+  margin-top: 0.7rem;
+  font-size: 1.3rem;
+  font-family: "Sourced Sans Pro", sans-serif, serif;
+}
+
+
+
+/* INFORMATION -- MAIN BODY */
+.info-text-background {
+  height: 100vh;
+  position: relative;
+  bottom: 10vh;
+}
+.info-icon {
+  font-size: 50px;
+  color: #00bbf0;
+  display: inline-block;
+  margin-bottom: 2.7rem;
+  background-color: #a6e3e999;
+  border-radius: 25%;
+  width: 90px; height: 90px;
+  padding: 20px;
+}
+.info-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem;
+  height: 90vh;
+  position: relative;
+  bottom: 20vh;
+}
+.info-text {
+  display: inline-block;
+  width: 88%;
+  position: static;
+  color: #364343;
+}
+.info-btn {
+  background-color: transparent;
+  display: inline-block;
+  width: 50%;
+  height: ;
+  font-size: 2rem;
+  color: #364343;
+  font-family: "Source Sans Pro", serif, sans-serif;
+  padding: 0.51rem 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  border: solid 1px #364343;
+  border-radius: 5px;
+  position: static;
+}
+.info-btn:hover {
+  color: #fff;
+  background-color: #00bbf0;
+  border-color: #00bbf0;
+  text-decoration: none;
+}
+.info-image{
+  background: url("../images/flower.png") no-repeat center center;
+  background-size: cover;
+  width: 32rem;
+  height: 32rem;
+  position: absolute;
+  z-index: 0;
+}
+.info-left {
+  background-color: #e8fffa;
+}
+  .info-left .info-text-container {
+  background-color: #c9ffcc;
+  float: left;
+  text-align: left;
+  padding-left: 3rem;
+  margin: 20vh 20vw 0 20vw;
+}
+  .info-left .info-text {
+    text-align: left;
+  }
+  .info-left .info-image {
+    right: 0; bottom: 0;
+  }
+
+
+
+  .info-right {
+    background-color: #c9ffcc;
+  }
+    .info-right .info-text-container {
+    background-color: #e8fffa;
+    float: right;
+    text-align: left;
+    padding-left: 3rem;
+    margin: 20vh 20vw 0 20vw;
+  }
+    .info-right .info-text {
+      text-align: left;
+    }
+    .info-right .info-image {
+      left: 0; bottom: 0;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+
+#what-is-ayurved {
+  bottom: 0vh;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1028px) {
+  .info-right .info-text-container {
+    background-color: #c9ffcc;
+  }
+  .info-left .info-text-container {
+    background-color: #e8fffa;
+  }
+  #navbar {
+    padding: auto 5rem auto;
+    text-align: center;
+    align-items: center;
+  }
+  .navbar {
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    margin: 0 auto;
+  }
+  #navigation {
+    opacity: 0;
+  }
+  #heading {
+    z-index: -2;
+    height: 0;
+    display: none;
+  }
+  .nav-link, #more-btn, .navbar-brand {
+    color: #3e3e3e;
+  }
+  .nav-link:hover, #more-btn:hover, .navbar-brand:hover {
+    color: #3e3e3e33;
+  }
+  #more-btn:focus {
+    outline: none;
+    outline-color: transparent;
+  }
+  .heading-small {
+    color: #52de97;
+    text-shadow: 2px 2px 2px #000;
+    text-transform: uppercase;
+    font-family: "Luckiest Guy", cursive;
+  }
+  .top {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+  .top-small {
+    background-color: #a0ffe655;
+    display: block;
+    z-index: 1;
+    position: static;
+    height: auto;
+  }
+
+  .ayurved-image-small {
+    height: 500px;
+    display: inline-block;
+    width: 100%;
+  }
+  .info-image {
+    display: none;
+  }
+  .info-text {
+    text-align: center;
+  }
+  .info-text h3, .info-text p{
+    text-align: center;
+    display: inline-block;
+    width: 90%;
+    align-items: center; align-content: center; align-self: center;
+  }
+  .info-text h3 {
+    font-size: 15rem;
+  }
+  .info-btn {
+    color: #fff;
+    background-color: #00bbf0;
+    border-color: #00bbf0;
+    text-decoration: none;
+  }
+
+  .info-right .info-icon,
+   .info-left .info-icon,
+    .info-left .info-btn,
+    .info-right .info-btn,
+    .info-left .info-text-container,
+    .info-right .info-text-container,
+    .info-right .info-text, .info-left .info-text{
+    text-align: center;
+    float: center;
+    align-items: center; align-self: center;
+  }
+
+  .info-text-container {
+    margin: 0;
+    text-align: center;
+    padding: 1rem auto 1rem;
+  }
+  .info-right .info-text-container, .info-left .info-text-container {
+    margin: 0;
+    position: static;
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+
+  .info-text-background {
+    padding: 0;
+    height: auto;
+    display: inline-block;
+    position: static;
+  }
+}
